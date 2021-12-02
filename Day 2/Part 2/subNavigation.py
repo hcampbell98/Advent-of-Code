@@ -21,13 +21,10 @@ class Submarine:
     def calculate_product(self):
         return self.horiz * self.depth
 
+sub = Submarine(0, 0, 0)
 with open("input.txt", "r") as f:
     commands = f.readlines()
-
-    sub = Submarine(0, 0, 0)
-
     for command in commands:
         sub.move(command)
-    
-    print(sub.horiz, sub.depth, sub.aim)
-    print(sub.calculate_product())
+
+print(sub.calculate_product())
