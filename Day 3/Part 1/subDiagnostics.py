@@ -17,5 +17,4 @@ epsilonRate = ""
 for result in results:
     epsilonRate = epsilonRate + "0" if result > len(report)/2 else epsilonRate + "1"
 
-
 print(int(gammaRate, 2) * int(epsilonRate, 2))
